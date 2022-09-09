@@ -6,31 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <header class="header">
-        <ul class="nav-lsit">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Список</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Загрузка (СБИС)</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Цены</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Обновление</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Настройки</a>
-            </li>
-        </ul>
-        <input type="search" placeholder="Поиск (не работает)">
-        <a href="#" class="cab-link">sales@oldhard.ru</a>
-        <a href="#" class="go-back-link">Logout</a>
+        <div class="wrapper">
+            <ul class="nav-list">
+                <li class="nav-item active-page">
+                    <a href="#" class="nav-link">
+                        <ion-icon name="list-outline"></ion-icon>
+                        Список
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <ion-icon name="refresh-circle-outline"></ion-icon>
+                        Загрузка
+                        <span class="small-words">
+                            (СБИС)
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <ion-icon name="cash-outline"></ion-icon>
+                        Цены
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <ion-icon name="bar-chart-outline"></ion-icon>
+                        Обновление
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <ion-icon name="cog-outline"></ion-icon>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+            <input type="search" placeholder="Поиск (не работает)" id="search-input">
+            <a href="#" class="cab-link">
+                sales@oldhard.ru
+            </a>
+            <a href="#" class="go-back-link">
+                <ion-icon name="log-out-outline"></ion-icon>
+            </a>
+        </div>
     </header>
+    <main>
+        <section class="main-section">
+            <div class="wrapper">
+
+            </div>
+        </section>
+    </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 

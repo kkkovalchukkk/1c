@@ -5,3 +5,78 @@
 /* Header */
 
 @import '/styles/header/header.css';
+
+
+button:active {
+    transition: .13s;
+    transform: translateY(2px);
+}
+
+/* Total */
+
+.total-section {
+    margin-top: 20px;
+}
+
+.total-section .table {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px #485fc724;
+    vertical-align: middle;
+    /* resize: horizontal; */
+    /* overflow-x: scroll; */
+    padding: 5px;
+}
+
+.total-section .table::-webkit-scrollbar {
+    /* height: 5px; */
+}
+
+
+.total-section .table a {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+.total-section .table a:hover,
+.total-section .table a:focus {
+    text-decoration-color: #485fc7e7;
+}
+
+.total-section .table:focus {
+    transition: .25s;
+    box-shadow: 0px 0px 40px #485fc754;
+    outline: none;
+}
+
+.total-section .table td {
+    transition: background-color .08s ease;
+    vertical-align: middle;
+    font-size: 12px;
+    height: 41px;
+    padding: 5px;
+}
+
+.total-section .table tr {
+    border-bottom: 1px solid #485fc724;
+}
+
+.total-section .table tr td:first-child {
+    width: min-content;
+    border-right: 1px solid #485fc724;
+}
+
+.total-section .table tr td:first-child+td {
+    font-weight: 500;
+    border-right: 1px solid #485fc724;
+}
+
+.total-section .table tr td:first-child:hover+td {
+    background-color: #485fc731;
+}
+
+.total-section .table tr td:first-child+td:hover {
+    background-color: #485fc731;
+}

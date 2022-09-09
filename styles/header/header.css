@@ -48,6 +48,15 @@
     background-color: #485fc7bf;
 }
 
+.header .nav-list .nav-link {
+    transition: box-shadow .11s ease;
+}
+
+.header .nav-list .nav-link:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #485fc7;
+}
+
 .header .nav-list .nav-link:active {
     transition: .13s;
     transform: translateY(3px);
@@ -104,6 +113,11 @@
     text-decoration-color: rgba(0, 0, 0, 0);
 }
 
+.cab-link:focus {
+    outline: none;
+    text-decoration-color: #485fc7;
+}
+
 .cab-link:hover {
     transition: .13s;
     text-decoration-color: #485fc7;
@@ -113,9 +127,18 @@
     width: 26px;
     height: 26px;
     vertical-align: middle;
+    transition: transform .13s ease;
 }
 
 .go-back-link:active .md {
     transition: .13s;
     transform: translateY(3px);
+}
+
+.go-back-link:focus {
+    outline: none;
+}
+
+.go-back-link:focus .md {
+    transform: scale(1.12);
 }

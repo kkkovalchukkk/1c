@@ -12,71 +12,187 @@ button:active {
     transform: translateY(2px);
 }
 
-/* Total */
 
-.total-section {
-    margin-top: 20px;
+input:focus,
+select:focus {
+    outline: 2px solid #485fc792;
 }
 
-.total-section .table {
-    margin: 0 auto;
+
+/* Total */
+
+
+
+.main-table {
+    margin: 40px auto;
     width: fit-content;
     display: flex;
     border-radius: 5px;
-    box-shadow: 0px 0px 40px #485fc724;
+    box-shadow: 0px 0px 5px #485fc74b;
     vertical-align: middle;
     /* resize: horizontal; */
     /* overflow-x: scroll; */
     padding: 5px;
+    outline: 1px solid #485fc724;
 }
 
-.total-section .table::-webkit-scrollbar {
-    /* height: 5px; */
+.main-table label {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-style: italic;
+    cursor: pointer;
+    transition: background-color .13s ease;
+}
+
+.main-table label:hover {
+    background-color: #485fc731;
+    border-radius: 2px;
 }
 
 
-.total-section .table a {
+
+.main-table a {
     text-decoration: underline;
     text-decoration-color: rgba(0, 0, 0, 0);
 }
 
-.total-section .table a:hover,
-.total-section .table a:focus {
+.main-table a:hover,
+.main-table a:focus {
     text-decoration-color: #485fc7e7;
 }
 
-.total-section .table:focus {
+.main-table:focus {
     transition: .25s;
     box-shadow: 0px 0px 40px #485fc754;
     outline: none;
 }
 
-.total-section .table td {
+.main-table td {
     transition: background-color .08s ease;
     vertical-align: middle;
     font-size: 12px;
-    height: 41px;
+    height: 50px;
     padding: 5px;
+    line-height: 12.5px;
+    max-width: 266px;
+    border: 1px solid #485fc724;
 }
 
-.total-section .table tr {
+.main-table tr {
     border-bottom: 1px solid #485fc724;
 }
 
-.total-section .table tr td:first-child {
+.main-table tr td:first-child {
     width: min-content;
-    border-right: 1px solid #485fc724;
 }
 
-.total-section .table tr td:first-child+td {
+.main-table tr td:first-child+td {
     font-weight: 500;
-    border-right: 1px solid #485fc724;
+    border: 1px solid #485fc724;
 }
 
-.total-section .table tr td:first-child:hover+td {
+.main-table tr td:first-child:hover+td {
     background-color: #485fc731;
 }
 
-.total-section .table tr td:first-child+td:hover {
+.main-table tr td:first-child+td:hover {
     background-color: #485fc731;
+}
+
+.add-table {
+    margin: 40px auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #485fc74b;
+    vertical-align: middle;
+    /* resize: horizontal; */
+    /* overflow-x: scroll; */
+    padding: 5px;
+    outline: 1px solid #485fc724;
+}
+
+.add-table label {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-style: italic;
+    cursor: pointer;
+    transition: background-color .13s ease;
+}
+
+.add-table label:hover {
+    background-color: #485fc731;
+    border-radius: 2px;
+}
+
+
+
+.add-table a {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+.add-table a:hover,
+.add-table a:focus {
+    text-decoration-color: #485fc7e7;
+}
+
+.add-table:focus {
+    transition: .25s;
+    box-shadow: 0px 0px 40px #485fc754;
+    outline: none;
+}
+
+.add-table td {
+    min-width: 55.8px;
+    text-align: center !important;
+    transition: background-color .08s ease;
+    vertical-align: middle;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 12.5px;
+    border: 1px solid #485fc724;
+}
+
+.add-table tr {
+    min-height: 42px;
+    border-bottom: 1px solid #485fc724;
+}
+
+.add-table td .number {
+    min-width: auto;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+}
+
+.add-table .cat-name {
+    width: 401px;
+}
+
+.add-table .icon-td {
+    min-width: auto;
+    width: 10px !important;
+    height: 10px !important;
 }

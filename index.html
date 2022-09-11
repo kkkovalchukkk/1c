@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles/bulma.css">
     <link rel="stylesheet" href="/index.css">
 </head>
 
@@ -57,131 +57,427 @@
         </div>
     </header>
     <main>
-        <section class="total-section">
-            <!-- <div class="wrapper"> -->
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <td>Владелец</td>
-                        <td>sales@oldhard.ru</td>
-                    </tr>
-                    <tr>
-                        <td>ID в СБИС</td>
-                        <td>145999941</td>
-                    </tr>
-                    <tr>
-                        <td>№ Торга (ЭА)</td>
-                        <td><a href="" class="n-torga-link">0251100003722000084</a> (кноп коп)</td>
-                    </tr>
-                    <tr>
-                        <td>Площадка:</td>
-                        <td>PTC-тендер (44)</td>
-                    </tr>
-                    <tr>
-                        <td>Тип:</td>
-                        <td>Электронный аукцион Закупка 44-Ф3</td>
-                    </tr>
-                    <tr>
-                        <td>Категория</td>
-                        <td>Компьютеры и комплектующие</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <select name="" id="">
-                                <option value="">Заключён</option>
-                                <option value="">Заключён</option>
-                                <option value="">Заключён</option>
-                            </select>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>(поле даты)</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Что должны сделать (поле?)</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>До какой даты должны (поле даты)</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Победитель ИНН, сумма, % снижения:</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>(не определён)</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            Заказчик
-                        </td>
-                        <td>
-                            <i>ОПФР по Новосибирской Области</i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>ИНН/КПП</td>
-                        <td>5406103101 540601001</td>
-                    </tr>
-                    <tr>
-                        <td>Регион</td>
-                        <td>54 Новосибирская область</td>
-                    </tr>
-                    <tr>
-                        <td>Гос. Оборон?</td>
-                        <td>
-                            <select name="" id="">
-                                <option value="">Пусто</option>
-                                <option value="">Пусто</option>
-                                <option value="">Пусто</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Контакты:</td>
-                        <td><a href="" class="show-contacts-link">Показать</a></td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>Статус</td>
-                        <td>
-                            <select name="" id="">
-                                <option value="">Собирается</option>
-                                <option value="">Собирается</option>
-                                <option value="">Собирается</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Наименование контракта №</td>
-                        <td>(поле строки)</td>
-                    </tr>
-                    <tr>
-                        <td>(вызов формы мойсклад)</td>
-                        <td>(вызов формы логистики)</td>
-                    </tr>
-                    <tr>
-                        <td>Запросы</td>
-                        <td>
-                            <button class="button is-small is-responsive">Help +</button>
-                            (2 кнопка)
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- </div> -->
-        </section>
+        <!-- <div class="wrapper"> -->
+        <table class="main-table">
+            <tbody>
+                <tr>
+                    <td>Владелец</td>
+                    <td>sales@oldhard.ru</td>
+                </tr>
+                <tr>
+                    <td>ID в СБИС</td>
+                    <td>145999941</td>
+                </tr>
+                <tr>
+                    <td>№ Торга (ЭА)</td>
+                    <td><a href="" class="n-torga-link">0251100003722000084</a> (кноп коп)</td>
+                </tr>
+                <tr>
+                    <td>Площадка:</td>
+                    <td>PTC-тендер (44)</td>
+                </tr>
+                <tr>
+                    <td>Тип:</td>
+                    <td>Электронный аукцион Закупка 44-Ф3</td>
+                </tr>
+                <tr>
+                    <td>Категория</td>
+                    <td>Компьютеры и комплектующие</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Заключён</option>
+                            <option value="">Заключён</option>
+                            <option value="">Заключён</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>(поле даты)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Что должны сделать (поле?)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>До какой даты должны (поле даты)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Победитель ИНН, сумма, % снижения:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>(не определён)</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>
+                        Заказчик
+                    </td>
+                    <td>
+                        <i>ОПФР по Новосибирской Области</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ИНН/КПП</td>
+                    <td>5406103101 540601001</td>
+                </tr>
+                <tr>
+                    <td>Регион</td>
+                    <td>54 Новосибирская область</td>
+                </tr>
+                <tr>
+                    <td>Гос. Оборон?</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Пусто</option>
+                            <option value="">Пусто</option>
+                            <option value="">Пусто</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Контакты:</td>
+                    <td><a href="" class="show-contacts-link">Показать</a></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Статус</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Собирается</option>
+                            <option value="">Собирается</option>
+                            <option value="">Собирается</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Наименование контракта №</td>
+                    <td>(поле строки)</td>
+                </tr>
+                <tr>
+                    <td>(вызов формы мойсклад)</td>
+                    <td>(вызов формы логистики)</td>
+                </tr>
+                <tr>
+                    <td>Запросы</td>
+                    <td>
+                        <button class="button is-small is-responsive">Help +</button>
+                        (2 кнопка)
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>
+                            СМП <input type="checkbox" />
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            Добро <input type="checkbox">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ФИАТ</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        ОЗ
+
+                        <input type="text" disabled value="5,234,48"></td>
+                    <td>
+                        <label>
+                            0.50% <input type="checkbox">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ОИК
+
+                        <input type="text" disabled value="52,344,48">
+                    </td>
+                    <td>
+                        <label>
+                            5.00%
+                            <input type="checkbox">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ОГО
+
+                        <input type="text" disabled value="0.00">
+                    </td>
+                    <td>
+                        <label>
+                            0.00%
+                            <input type="checkbox">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Комиссия за победу</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>
+                        БГ
+                    </td>
+                    <td>
+                        <input type="text" value="1,046,896.55">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" value="0.00">
+                    </td>
+                    <td>
+                        <input type="text" disabled value="1,046,896.55">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" value="0.00">
+                    <td>
+                        <input type="text" disabled value="910,000.00">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" value="0.00">
+                    </td>
+                    <td>
+                        <input type="text" value="0.00">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="text" disabled value="136,896,55">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td style="text-align: center;">
+                        <span class="up">
+                            <ion-icon name="caret-up-outline"></ion-icon>
+                            13.08%
+                        </span>
+                        <span class="down">
+                            <ion-icon name="caret-down-outline"></ion-icon>
+                            100.00%
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- </div> -->
+        <table class="main-table">
+            <tbody>
+                <tr>
+                    <td>Место исполнения</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Российская федерация, Новосибирская обл., г. Новосибирск, ул. Серебренниковская, 19/1</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Населённый пункт</td>
+                    <td>Условия поставки</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td>В течение 10 <i>(десяти)</i> рабочих дней со дня заключения гос. контракта</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>
+                        Срок поставки*
+                    </td>
+                    <td>
+                        Срок поставки
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><select name="" id="">
+                            <option value="">Не определён</option>
+                        </select></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Дата получения заказичком</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><i>(дата)</i></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>
+                        Срок оплаты*
+                    </td>
+                    <td>
+                        Срок оплаты
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Не определён</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="add-table">
+            <!-- 1 линия  -->
+
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="width: 400px; display: flex; align-items: center; gap: 10px;">
+                        Наименование
+                        <button class="button is-info is-small">Подбор</button>
+                    </td>
+                    <td>
+                        Кол-во
+                    </td>
+                    <td>
+                        Цена
+                    </td>
+                    <td>
+                        Итого
+                    </td>
+                    <td>
+                        МСклад
+                    </td>
+                    <td>
+                        Артикул
+                    </td>
+                    <td>
+                        Комменты
+                    </td>
+                </tr>
+                <tr>
+                    <td class="icon-td">
+                        <ion-icon name="pause-outline"></ion-icon>
+                    </td>
+                    <td class="icon-td">
+                        <ion-icon name="arrow-up-outline"></ion-icon>
+                    </td>
+                    <td class="icon-td">
+                        <ion-icon name="arrow-down-outline"></ion-icon>
+                    </td>
+                    <td>
+                        <span class="number">1</span>
+                    </td>
+                    <td>Монитор, подключаемый к компьютеру</td>
+                    <td>35</td>
+                    <td>29,911.33</td>
+                    <td>1, 046,896.55</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" placeholder="Комментарий..."></td>
+                </tr>
+            </tbody>
+            <!-- 2 линия  -->
+            <tbody>
+
+                <tr>
+                    <td class="icon-td">
+                        <ion-icon name="pause-outline"></ion-icon>
+                    </td>
+                    <td class="icon-td">
+                        <ion-icon name="arrow-up-outline"></ion-icon>
+                    </td>
+                    <td class="icon-td">
+                        <ion-icon name="arrow-down-outline"></ion-icon>
+                    </td>
+                    <td>
+                        <span class="number">2</span>
+                    </td>
+                    <td class="cat-name">3.5" жесткий диск Seagate IronWolf Pro 16Tb / 7.2K / 256mb / SATA / Для сервера
+                        / ST16000NE000</td>
+                    <td>35</td>
+                    <td>26,000.00</td>
+                    <td>910,000.00</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" placeholder="Комментарий..."></td>
+                </tr>
+            </tbody>
+            <!-- 3 линия -->
+            <tbody>
+
+                <tr>
+                    <td class="icon-td">
+                        <ion-icon name="pause-outline"></ion-icon>
+                    </td>
+                    <td class="icon-td">
+                        <ion-icon name="arrow-up-outline"></ion-icon>
+                    </td>
+                    <td class="icon-td">
+                        <ion-icon name="arrow-down-outline"></ion-icon>
+                    </td>
+                    <td>
+                        <span class="number">3</span>
+                    </td>
+                    <td class="cat-name">3.5" жесткий диск Seagate IronWolf Pro 16Tb / 7.2K / 256mb / SATA / Для сервера
+                        / ST16000NE000 (копия)</td>
+                    <td>35</td>
+                    <td>26,000.00</td>
+                    <td>910,000.00</td>
+                    <td>07287</td>
+                    <td>ST16000NE000</td>
+                    <td><input type="text" placeholder="Комментарий..."></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="button is-small is-success">В архив</button>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 
 </html>
